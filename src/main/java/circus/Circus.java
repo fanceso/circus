@@ -2,16 +2,10 @@ package circus;
 
 import circus.animal.Animal;
 import circus.animal.Duck;
-<<<<<<< HEAD:src/main/java/circus/Circus.java
-import circus.animal.Equipment;
 import circus.animal.Parrot;
 import circus.stuff.Cannon;
-=======
-import circus.animal.Parrot;
-import circus.stuff.Cannon;
-import circus.stuff.Equipment;
->>>>>>> origin/improved:src/main/java/Circus.java
 import circus.stuff.Ladder;
+import circus.stuff.Equipment;
 
 public class Circus {
     private static Animal[] animals = {
@@ -37,16 +31,6 @@ public class Circus {
             if (a.getValue() <= 5) {
                 System.out.println("Ignoring low value item: " + a.getValue());
                 continue;
-<<<<<<< HEAD:src/main/java/circus/Circus.java
-            } else {
-                total += a.getValue();
-                System.out.println("Adding item value: " + a.getValue());
-                // some 
-                // more
-                // code 
-                // here ...
-=======
->>>>>>> origin/improved:src/main/java/Circus.java
             }
 
             total += a.getValue();
@@ -58,10 +42,6 @@ public class Circus {
     public static void main(String[] args) {
         makeAnimalsTalk();
         System.out.println("Total value of equipments " + calculateValue(equipments));
-<<<<<<< HEAD:src/main/java/circus/Circus.java
-        System.out.println("Find value of animals " + calculateValue(animals));
-=======
         System.out.println("Total value of animals " + calculateValue(animals));
->>>>>>> origin/improved:src/main/java/Circus.java
     }
 }

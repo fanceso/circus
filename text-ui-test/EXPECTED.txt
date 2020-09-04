@@ -1,4 +1,4 @@
-I'm a circus.animal.Duck
+I'm a Duck
 Quack Quack
 I'm a parrot
 Polly wants a cracker
