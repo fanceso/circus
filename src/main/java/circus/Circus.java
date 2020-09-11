@@ -3,6 +3,7 @@ package circus;
 import circus.animal.Animal;
 import circus.animal.Duck;
 import circus.animal.Parrot;
+import circus.animal.Tiger;
 import circus.stuff.Cage;
 import circus.stuff.Cannon;
 import circus.stuff.Equipment;
@@ -76,12 +77,20 @@ public class Circus {
             System.out.println(a);
         }
 
+        //Duck cage, cage for type Duck - Generics
+        //<Duck> will replace <T> in cage class
         Cage<Duck> duckCage = new Cage<>();
         Duck duck = new Duck("Heuye");
-        duckCage.lockUp(duck);
+        duckCage.lockUp(duck); // doing checking of tpye
+
+
         Parrot parrot = new Parrot("Popper");
         Cage<Parrot> parrotCage = new Cage<>();
         parrotCage.lockUp(parrot);
+
+        Tiger tiger = new Tiger("sherkhan");
+        Cage<Tiger> tigerCage = new Cage<>();
+        tigerCage.lockUp(tiger);
 
         ArrayList<Cage> cages = new ArrayList<>();
         cages.add(duckCage);
